@@ -1,22 +1,26 @@
+<script>
 var buttonFirst = document.getElementById('my-first-button')
-var buttonSecond = document.getElementById('my-second-button')
-var buttonThird = document.getElementById('my-third-button')
-
 const clickAlarmSound = document.getElementById('alarmLong')
 const hoverAlarmSound = document.getElementById('alarmShort')
-const clickBoxingSound = document.getElementById('boxingLong')
-const hoverBoxingSound = document.getElementById('boxingShort')
-const clickCheersSound = document.getElementById('cheersLong')
-const hoverCheersSound = document.getElementById('cheersShort')
-
 buttonFirst.addEventListener('click', function () {
   clickAlarmSound.play();
-})
+});
+</script>
 
+<script>
+var buttonSecond = document.getElementById('my-second-button')
+const clickCheersSound = document.getElementById('cheersLong')
+const hoverCheersSound = document.getElementById('cheersShort')
 buttonSecond.addEventListener('click', function () {
   clickCheersSound.play();
-})
+});
+</script>
 
+<script>
+var buttonThird = document.getElementById('my-third-button')
+const clickBoxingSound = document.getElementById('boxingLong')
+const hoverBoxingSound = document.getElementById('boxingShort')
 buttonThird.addEventListener('click', function () {
   clickBoxingSound.play();
-})
+});
+</script>
