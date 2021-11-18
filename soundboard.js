@@ -10,13 +10,13 @@ const clickCheersSound = new Audio('cheer_long.wav');
 const hoverCheersSound = new Audio('cheering.wav');
 
 buttonFirst.addEventListener('click', function () {
-  await clickAlarmSound.play();
+  clickAlarmSound.play();
 })
 
 buttonSecond.addEventListener('click', function () {
-  await clickCheersSound.play();
+  clickCheersSound.play();
 })
 
 buttonThird.addEventListener('click', function () {
-  await clickBoxingSound.play();
+  clickBoxingSound.play();
 })
