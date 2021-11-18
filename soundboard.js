@@ -2,9 +2,9 @@ var buttonFirst = document.getElementById('my-first-button')
 var buttonSecond = document.getElementById('my-second-button')
 var buttonThird = document.getElementById('my-third-button')
 
-let alarmElem = document.getElementById("alarm");
-let cheersElem = document.getElementById("cheers");
-let boxingElem = document.getElementById("boxing");
+let alarmElem = document.getElementById("air_raid.wav");
+let cheersElem = document.getElementById("cheering.wav");
+let boxingElem = document.getElementById("boxing_bell_multiple.wav");
 
 buttonFirst.addEventListener('click', function () {
   await alarmElem.play();
