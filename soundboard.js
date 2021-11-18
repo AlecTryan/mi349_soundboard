@@ -2,18 +2,21 @@ var buttonFirst = document.getElementById('my-first-button')
 var buttonSecond = document.getElementById('my-second-button')
 var buttonThird = document.getElementById('my-third-button')
 
-let alarmElem = document.getElementById("air_raid.wav");
-let cheersElem = document.getElementById("cheering.wav");
-let boxingElem = document.getElementById("boxing_bell_multiple.wav");
+const clickAlarmSound = new Audio('air_raid.wav');
+const hoverAlarmSound = new Audio('alarm_beep.wav');
+const clickBoxingSound = new Audio('boxing_bell.wav');
+const hoverBoxingSound = new Audio('boxing_bell_multiple.wav');
+const clickCheersSound = new Audio('cheer_long.wav');
+const hoverCheersSound = new Audio('cheering.wav');
 
 buttonFirst.addEventListener('click', function () {
-  await alarmElem.play();
+  await clickAlarmSound.play();
 })
 
 buttonSecond.addEventListener('click', function () {
-  await cheersElem.play();
+  await clickCheersSound.play();
 })
 
 buttonThird.addEventListener('click', function () {
-  await boxingElem.play();
+  await clickBoxingSound.play();
 })
